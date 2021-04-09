@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App{
+  background-image: url('./assets/coldbg.png');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.App.warm{
+  background-image: url('./assets/warmbg.jpg');
+}
+
+
+main{
+  min-height: 125vh;
+  padding: 25px;
+}
+
+.barra-pesquisa{
+  width: 100%;
+}
+
+.barra-pesquisa .barra-pesquisa{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+  margin-top: -24px;
+
+  
+}
+
+.barra-pesquisa .barra-pesquisa:focus{
+  background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+.localizacao-box .localizacao{
+  margin-top: 25px;
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.localizacao-box .data{
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.tempo-box{
+  text-align: center;
+}
+
+.tempo-box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tempo-box .clima{
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
