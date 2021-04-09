@@ -1,6 +1,6 @@
 <h1 align="center"> Tempo App </h1>
 
-<p > O Tempo App é um aplicativo para Web que demonstra o clima e a temperatura de uma localização, a partir de uma API. </p>
+<p > O Tempo App é um aplicativo React para Web que demonstra o clima e a temperatura de uma localização, a partir de uma API. </p>
 
 ## 📷 Demonstração do projeto
 ![screen-capture-_9_](https://user-images.githubusercontent.com/70667966/114250307-adbc0000-9973-11eb-9523-bc97327a0dc5.gif)
